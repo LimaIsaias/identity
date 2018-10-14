@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Isaías de Lima Coelho</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main">
+			<header>
+				<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+				<h1>Isaías Lima</h1>
+				<p>Full-Stack Developer</p>
+			</header>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/limaisaias/" target="linkedin" class="fa-linkedin">LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/isaiaslima56/" target="instagram" class="fa-instagram">Instagram</a></li>
+					<li><a href="https://www.facebook.com/isaias.lima.56" target="facebook" class="fa-facebook">Facebook</a></li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy;Copyright</li>
+				<li>Isaías Lima</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+
+		function typeWrite(elemento) {
+			const textoArray = elemento.innerHTML.split('');
+			elemento.innerHTML = '';
+			textoArray.forEach((letra, i) => {
+				setTimeout(() =>
+					elemento.innerHTML += letra, 120 * i)
+			});
+		}
+		const titulo = document.querySelector('p');
+		typeWrite(titulo);
+	</script>
+
+</body>
+
+</html>
